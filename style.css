@@ -359,7 +359,7 @@ body {
 }
 
 .transition-side-bar {
-    transform: translateX(-210px);
+    transform: translateX(-76%);
     transition: 200ms ;
 }
 
