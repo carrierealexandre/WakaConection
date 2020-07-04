@@ -124,6 +124,7 @@ body {
     grid-auto-flow: column;
 }
 .input-wrapper input{
+    outline: none;
     height: 100%;
     width: 100%;
     background: none;
@@ -155,6 +156,7 @@ body {
 }
 
 .menu-bar-lis button {
+    outline: none;
     background: none;
     border: none;
     font-size: 0.7rem;
@@ -371,6 +373,10 @@ body {
 
 .side-bar__li li{
     background-color: var(--light);
+}
+
+.side-bar__li li:hover {
+    background-color: #ccc ;
 }
 
 .side-bar__li p {
@@ -675,6 +681,7 @@ body {
 }
 
 .add-to-cart button {
+    outline: none;
     width: 100%;
     justify-self: center;
     border-radius: 5px;
