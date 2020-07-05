@@ -235,7 +235,7 @@ body {
 
 /* _________________________________burger-clicked menu_______________________________________ */
 .menu__burger-up{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -335px;
     width: 320px;
