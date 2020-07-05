@@ -59,11 +59,28 @@ for (let i = 0; i<menuLenght; i++){
 // timed scrollBar on sideBar
 
 const burger = document.querySelector('.burger-wraper');
-const menuBurger = document.querySelector('.menu__burger-up')
-burger.addEventListener('click', function burgerClickHandler(){
-    console.log('hello')
+const clonedBurger = document.querySelector('.burger-wraper__clone')
+const menuBurger = document.querySelector('.menu__burger-up');
+const line1 = document.querySelectorAll('.line1');
+const line2 = document.querySelectorAll('.line2');
+const line3 = document.querySelectorAll('.line3');
+
+// const bodyBackgroud = document.querySelector('.wrapper__nav-bar')
+// burger.addEventListener('click', function burgerClickHandler(){
+//     menuBurger.classList.add('menu__burger-down');
+//     line1[0].classList.toggle('line1rotated');
+//     line2[0].classList.toggle('hidden');
+//     line3[0].classList.toggle('line3rotated');
+//     // bodyBackgroud.classList.toggle('opacity-backgroud');
+// });
+
+clonedBurger.addEventListener('click', function xanimationhandler(){
     menuBurger.classList.toggle('menu__burger-down');
-})
+    clonedBurger.classList.toggle('move-burger')
+    line1[0].classList.toggle('line1rotated');
+    line2[0].classList.toggle('hidden');
+    line3[0].classList.toggle('line3rotated');
+} )
 
 
 

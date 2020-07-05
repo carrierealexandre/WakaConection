@@ -174,43 +174,72 @@ body {
     justify-content: space-around;
     height: 35px;
     width: 40px;
-    
-    
+  
+} 
+.burger-wraper__clone{
+    position: absolute;
+    top: 7.5px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35px;
+    width: 40px;
+    transition: 500ms ease-in;
 }
-.burger-wraper:hover {
-    cursor: pointer;
+.move-burger {
+    transition: 500ms ease-in;
+    transform: translateX(-65px);
 }
 
+.burger-wraper__clone:hover {
+    cursor: pointer;
+}
 .line1 {
     
     height: 3px;
     width: 80%;
     background-color: var(--light);
     border-radius: 5px;
-    
+    transition: 500ms ease-in;   
+     
+}
+.line1rotated { 
+    transition: 500ms ease-in; 
+    transform: rotate(45deg) translateY(12px);
 }
 .line2 {
     height: 3px;
     width: 80%;
     background-color: var(--light);
     border-radius: 5px;
+    transition: 2000ms linear;
     
 }
+
 .line3 {
+    
     height: 3px;
     width: 80%;
     background-color: var(--light);
     border-radius: 5px;
+    transition: 500ms ease-in; 
+}
+
+.line3rotated {
+    transition: 500ms ease-in; 
+    transform: rotate(315deg) translateY(-12px);
 }
 /* content */
 
 /* _________________________________burger-clicked menu_______________________________________ */
 .menu__burger-up{
-    position: fixed;
-    top: 50px;
-    left: -280px;
-    width: 280px;
-    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -335px;
+    width: 320px;
+    height: 100vh;
     z-index: 3;
     background-color: #636D6F;
     opacity: 0.99;
@@ -242,8 +271,8 @@ body {
 
 
 .menu__burger-down {
-    transform: translateX(280px);
-    top: 50px;
+    transform: translateX(335px);
+    top: 0;
     transition: 200ms ;
 }
 
@@ -321,6 +350,11 @@ body {
 .hidden{
     display: none;  
 }
+.hidden-timed{
+    display: none;
+    transition: 3000ms linear; 
+}
+
 
 .side-bar__toogle-arrows {
     position: relative;  
@@ -943,9 +977,17 @@ body {
         padding: 0;
         display: grid;
         padding-right: 20px;
-        grid-template-columns: 30% 30%;
+        grid-template-columns: 50% 30%;
         column-gap: 20px;
-        justify-content: end;
+        justify-content: space-between;
+    }
+    .qty-or-lbs-wrapper {
+        display: grid;
+        height: 85%;
+        
+        border-left: 1px solid #999;
+        align-items: center;
+        justify-content: center;
     }
     .input-qty-wrapper {
         font-size: 1.2rem;
