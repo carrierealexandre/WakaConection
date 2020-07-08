@@ -1,512 +1,790 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WakaConnection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome.min.css">
     <script src="https://kit.fontawesome.com/af96fae551.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
-    <div class="menu__burger-up">
-        <div class="burger-wraper__clone">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul>
-            <li>About us</li>
-            <li>Airports</li>
-            <li>Alert System</li>
-            <li>conctact</li>
-            <li>Delivery Methodes</li>
-            <li>Services</li>
-            <li>Shopping</li>
-            
-        </ul>
-    </div>
-    <div class="wrapper__nav-bar">
-        <div class="top-header-wrapper">
-            
-            <nav class="nav-bar">
-                <div class="burger-wraper">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
 
-                <div class="nav-bar_companie-logo">
-                        <a href="index.html">
-                            <i class="fas fa-tree fa-3x"></i>
-                            <h1>Waka</h1>
-                        </a> 
-                </div>
-                <div class="search-warpper">
-                    <div class="search-sizer">
-                        <div class="input-wrapper">
-                            <input type="text" value="Search" name="" id="">
-                        </div>
-                        <div class="fs-search-trigger__icon">
-                            <i class="fas fa-search fa-2x"></i>
-                        </div>
-                    </div>
-                </div>
+
+    <div id="top"><!-- Top Begin -->
+
+        <div class=""><!-- col-md-6 Begin -->
+
+            <a id="self-logo" href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
+                
+                <i class="fas fa-tree fa-2x"></i>
+                <h1 class=hidden-xs>WakaCargo</h1>
+                <h1 class=visible-xs></h1>
+
+            </a><!-- navbar-brand home End -->
+
+        </div><!-- col-md-6 End -->
+        <div id="top-container" class="container"><!-- container Begin -->
+            
+            
+            
+            <div class="col-md-5 offer "><!-- col-md-6 offer Begin -->
+                <a href="#" class="btn btn-success btn-sm">Welcome</a>
+                <a href="#">4 Items | Total Price: $300.00</a>
+            </div><!-- col-md-6 offer End -->
+            
+            
+            <div class="col-md-5 "><!-- col-md-6 Begin -->
+             <ul class="menu"><!-- menu Begin -->
+             
+                
+                <li>
+                    <a href="airport.php">
+                    <i class="fa fa-plane"></i>    
+                    <span>Pikanchikum</span>
+                              
+                    </a>
+                </li>
+                <li>
+                    <a href="checkout.php">My Account</a>
+                </li>
+                <li>
+                    <a href="cart.php">Go To Cart</a>
+                </li>
+                <li>
+                    <a href="checkout.php.php">Login</a>
+                </li>
+
+             </ul><!-- menu End -->
+            </div><!-- col-md-6 End -->
+        </div><!-- container End -->
+    </div><!-- Top End -->
+
+    <div class="navbar navbar-default" id="navbar"><!-- navbar navbar-default Begin -->
+
+        <div class="container"><!-- container Begin -->
+
+            <div class="navbar-header"><!-- navbar-header Begin -->
+
+            
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fas fa-bars fa-1x"></i>
+
+                </button>
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
+
+                    <span class="sr-only">Toggle search</span>
+                    <i class="fa fa-search"></i>
+
+                </button>
+                
+                
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#cart">
                     
-                <div class="nav-bar__right-wraper">
-                    <ul class="menu-bar-lis">
+                    <a href="cart.php" class=" "><!-- btn-navbar btn-primary right begin -->
+                    
+                        <span class="sr-only">Toggle cart</span>
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>4</span>
+                        <i class="fa fa-dollar"></i>
+                        <span>300.00</span>
+
+                    </a><!-- btn-navbar btn-primary right end -->
+                </button>
+
+            </div><!-- navbar-header End -->
+
+            <div class="navbar-collapse collapse" id="navigation"><!-- navbar-collapse collapse begin -->
+
+                <div class="padding-nav"><!-- padding-nav begin -->
+
+                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left begin -->
+
+                        <li class="active">
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="#profile"data-toggle="collapse" data-target="#menuShop">Shop</a>
+                            <div id="menuShop" class="collapse">
+                                <a href="#">All Department</a>
+                                <a href="#">Groceries</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="airport.php">Airports</a>
+                        </li>
+                        <li>
+                            <a href="checkout.php">My Account</a>
+                        </li>
                         
-                        <li class="menu-bar__search">
-                            <button role="button" class="search_trigger nav-button">
-                                <div class="search-trigger__icon">
-                                    <i class="fas fa-search fa-2x"></i>
-                                </div>
-                            </button>
+                        <li>
+                            <a href="#profile"data-toggle="collapse" data-target="#demo">Delivery</a>
+                            <div id="demo" class="collapse">
+                                <a href="#">Notification System</a>
+                                <a href="#">Delivery Methode</a>
+                            </div>
                         </li>
-                        <li class="menu-bar__help">
-                            <button role="button" class="help_trigger nav-button">
-                                <div class="help-trigger__icon">
-                                    <i class="far fa-question-circle fa-2x"></i>
-                                </div>
-                            </button>
+                        <li>
+                            <a href="contact.php">Contact Us</a>
                         </li>
-                        <li class="menu-bar__cart">
-                            <button role="button" class="cart_trigger nav-button">
-                                <div class="cart-trigger__icon">
-                                    <i class="fas fa-shopping-cart fa-2x"></i>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="menu-bar__account">
-                            <button role="button" class="account_trigger nav-button">
-                                <div class="account-trigger__icon">
-                                    <i class="fas fa-user-circle fa-2x"></i>
-                                </div>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="wrapper">
-            <div class="content-wrapper">
+                        
+                    </ul><!-- nav navbar-nav left End -->
 
-                <div class="side-bar-wrapper side-bar__scroll-bar-hidden " id="">
-                    <div class="side-bar__toogle-arrows">
-                        <div class="arrow-click previous-arrow">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
-                        <div class="arrow-click next-arrow hidden">
-                            <i class="fas fa-chevron-right "></i>
-                        </div>
-                    </div>
-                    <div class="navigation-guide-title">
-                        <h6>All Department</h6>
-                    </div>
-                    <ul class="side-bar__li ">
-                        <li><a  href="pop.html"><p>Breverage - Pop</p><i class="fas fa-glass-whiskey"></i></a></li>
-                        <li><a  href="chips.html"><p>Chips</p><i class="fas fa-pizza-slice"></i></a></li>
-                        <li><a  href="staples.html"><p>Staples</p><i class="fas fa-carrot"></i></a></li>
-                        <li><a  href="cereal.html"><p>Cereal / Pancake Mix</p><i class="fas fa-fish"></i></a></li>
-                        <li><a  href="syrup.html"><p>Syrup / Jam / Sauce</p><i class="fas fa-cheese"></i></a></li>
-                        <li><a  href="packing.html"><p>Packing / plates</p><i class="fas fa-egg"></i></a></li>
-                        <li><a  href="coffee.html"><p>Coffee / Tea</p><i class="fas fa-seedling"></i></a></li>
-                        <li><a  href="cleaning.html"><p>Cleaning / Laundrt Suplies</p><i class="fas fa-hamburger"></i></a></li>
-                    </ul>
-                </div>
+                </div><!-- padding-nav End -->
+                
+            
 
 
-                <div class="items-wrapper" id="items-wrapper1">
 
-                    <!-- image on top -->
-                    <div class="instruction-title">
-                        <div class="title__wrapper">
+                <a href="cart.php" class="hidden-xs btn navbar-btn btn-primary right"><!-- btn-navbar btn-primary right begin -->
+
+                    <i class="fa fa-shopping-cart"></i>
+
+                    <span>4 Items In Your Shopping Cart</span>
+
+                </a><!-- btn-navbar btn-primary right End -->
+                
+                <div class="  navbar-collapse collapse right"><!--navbar-collapse collapse right begin -->
+
+                    <button class=" btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+                    
+                    <i class="fa fa-search"></i>
+
+                    <span class="sr-only">Toggle Search</span>
+
+                    </button>
+                    
+
+                </div><!-- navbar-collapse collapse right End -->
+
+            
+            </div><!-- navbar-collapse collapse End -->
+
+        </div><!-- container End -->
+
+    </div><!-- navbar navbar-default Finish -->
+
+    <div class="container"><!-- search bar container Begin -->
+
+        <div><!-- col-md-12 Begin -->
+
+            <div class="collapse" id="search"><!-- collapse clearfix Begin -->
+
+                <form method="get" action="result.php" class="navbar-form"><!--navbar-form Begin -->
+
+                    <div id="search-group" class="input-group "><!-- input-group Begin -->
+
+                        <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+
+                        <span class="input-group-btn"><!--input-group-btn begin -->
+
+                            <button type="submit" name="search" value="search" class="btn btn-primary">
+
+                                <i class="fa fa-search"></i>
+
+                            </button>
+
+                        </span><!--input-group-btn Finish -->
+
+                    </div><!--input-group Finish -->
+
+                </form><!-- navbar-form Finish -->
+
+            </div><!-- collapse clearfix finish -->
+
+        </div><!-- col-md-12 Finish -->
+
+    </div><!-- search bar container finish -->
+
+    <div class="container" id="intructionCards"><!-- website content container Begin -->
+
+        <div class="col-md-12"><!-- col-md-12 Begin -->
+
+            </div><!-- begin -->
+
+                <div class="instruction-title">
+                    <div class="img-content"><!-- img-content Begin -->
+                        
+                        <h1>WakaCargo</h1>
+                        <h3>Cargo Delivery Made Easy</h3>
+                        <p>The goal is to deliver cargo to first nation at an afordable price no need to rent the full plane. Just make your order and wakaCargo will take care of the rest for you. </p>
+                    </div><!-- img-content Finish -->
+                    
+                    <div class="title__wrapper"><!-- title__wrapper begin -->
                             <h1>How it works</h1>
-                        </div>
-                    </div>
-                    <div class="top-section">
-                        <div class="how-it-works__wrapper">
-                            
-                            <div class="wrapper__card first">
-                                <div class="titled-card">
-                                    <h4>Select Airport</h4>
-                                </div>
-                                <div class="img-wrapper">
-                                    <img src="Airport sky birds planes warehouse airport graphic design illustrator.png" alt="">
-                                </div>
-                                <div class="card-content ">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
-                                    
-                                        <a class="card-link" href="#">
-                                            <div class="wrapper__card-link">view All</div>
-                                        </a>
-                                    
-                                </div>
-                            </div>
-                            <div class="wrapper__card">
-                                <div class="titled-card">
-                                    <h4>Shop</h4>
-                                </div>
-                                <div class="img-wrapper">
-                                    <img src="./Young girl rides shopping cart kit8 flat vector illustration complete.jpg" alt="">
-                                </div>
-                                <div class="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
-                                    
-                                    <a class="card-link" href="#"><div class="wrapper__card-link">start browsing</div></a>
-                                    
-                                </div>
-                            </div>
-                            <div class="wrapper__card">
-                                <div class="titled-card">
-                                    <h4>Alert System </h4>
-                                </div>
-                                <div class="img-wrapper">
-                                    <img src="./Notification Illustration spot illustration icon illustrator product i.png" alt="">
-                                </div>
-                                <div class="card-content">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
-                                    <div class="wrapper__card-link">
-                                        <a class="card-link" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrapper__card">
-                                <div class="titled-card">
-                                    <h4>Delivery Method </h4>
-                                </div>
-                                <div class="img-wrapper">
-                                    <img src="./Exetel - Cargo planes character illustration vector.png" alt="">
-                                </div>
-                                <div class="card-content">
-                                    
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
-                                    
-                                    <a class="card-link" href="#"><div class="wrapper__card-link">Read More</div></a>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <!-- Row 1 of items -->
+                    </div><!-- title__wrapper Finish -->
+                </div>
+                
+            <div class="top-section"><!-- top-section begin -->
 
-                    <div class="row1-wrapper">
-                        
-                        <div class="row1-header">
-                            <h2>Most Popular</h2>
-                        </div>
-                        <div class="items-row1">
-                            <!-- item start master template V1.5 -->
-                            <!-- -------------------------------------------------------------------------- -->
-                            <div class="item-wrapper">
-                                
-                                <div class="item-row1">
-                                    <div class="item-img">
-                                        <img src="water.jpg" alt="Bottle of Water">
-                                    </div>
-                                </div>
-                                <!-- item row 2, description and detail iin here. -->
-                                
-                                <div class="item-row2"> 
-                                    <div class="item-desc">
-                                        <p class="desc-tag">Natural Spring Water</p>
-                                        <p>40 x 500 mL bottles</p>
-                                    </div>
-                        
-                                </div>
-                                <!-- item price and saving here -->
-                                <div class="item-row3">
-                                    <div class="item-price-wrapper">
-                                        <div class="item-price-icon">
-                                            <i class="fas fa-dollar-sign"></i>
-                                        </div>
-                                        
-                                        <div class="dollar">
-                                            6
-                                        </div>
-                                        <div class="cent">
-                                            49
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="item-costs__wrapper">
-                        
-                                        <div class="item-costs__details">
-                                            <div class="item-costs__shipping-cost">
-                                                <p class="shipping-cost__p">shipping</p>
-                                                <p class="shipping-cost__price">$15.00</p>
-                                            </div>
-                                            <div class="item-price-was__total-cost">
-                                                <p class="total-cost__p">Total</p>
-                                                <p class="total-cost__price">$21.49</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-fotter">
-                                    
-                                    <div class="add-to-cart">
-                                        <div class="input-qty-wrapper">
-                                            <input type="number" name="qty-lbs" id="qtyLbs" value="1">
-                                            <div class="qty-or-lbs-wrapper">
-                                                <div>Qty</div>
-                                            </div>
-                                        </div>
-                                        <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- ------------------------------------------------------------------------- -->
-                            <!-- end of master item -->
-                            <div class="item-wrapper">
-                                <div class="item-row1">
-                                    <div class="item-img">
-                                        <img src="pepsi.jpg" alt="">
-                                    </div>
-                                </div>
-                                <!-- item row 2, description and detail iin here. -->
-                                
-                                <div class="item-row2"> 
-                                    <div class="item-desc">
-                                        <p class="desc-tag">Pepsi </p>
-                                        <p>24 x 355 mL Cans</p>
-                                    </div>
-                        
-                                </div>
-                                <!-- item price and saving here -->
-                                <div class="item-row3">
-                                    <div class="item-price-wrapper">
-                                        <div class="item-price-icon">
-                                            <i class="fas fa-dollar-sign"></i>
-                                        </div>
-                                        
-                                        <div class="dollar">
-                                            10
-                                        </div>
-                                        <div class="cent">
-                                            69
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="item-costs__wrapper">
-                        
-                                        <div class="item-costs__details">
-                                            <div class="item-costs__shipping-cost">
-                                                <p class="shipping-cost__p">shipping</p>
-                                                <p class="shipping-cost__price">$4.00</p>
-                                            </div>
-                                            <div class="item-price-was__total-cost">
-                                                <p class="total-cost__p">Total</p>
-                                                <p class="total-cost__price">$14.69</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-fotter">
-                                    
-                                    <div class="add-to-cart">
-                                        <div class="input-qty-wrapper">
-                                            <input type="number" name="qty-lbs" id="qtyLbs" value="1">
-                                            <div class="qty-or-lbs-wrapper">
-                                                <div>Qty</div>
-                                            </div>
-                                        </div>
-                                        <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        <div class="item-wrapper">
-                                <div class="item-row1">
-                                    <div class="item-img">
-                                        <img src="rainbow.jpg" alt="">
-                                    </div>
-                                </div>
-                                <!-- item row 2, description and detail iin here. -->
-                                
-                                <div class="item-row2"> 
-                                    <div class="item-desc">
-                                        <p class="desc-tag">Crush Rainbow Pack</p>
-                                        <p>24 x 355 mL Cans</p>
-                                    </div>
-                        
-                                </div>
-                                <!-- item price and saving here -->
-                                <div class="item-row3">
-                                    <div class="item-price-wrapper">
-                                        <div class="item-price-icon">
-                                            <i class="fas fa-dollar-sign"></i>
-                                        </div>
-                                        
-                                        <div class="dollar">
-                                            16
-                                        </div>
-                                        <div class="cent">
-                                            59
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="item-costs__wrapper">
-                        
-                                        <div class="item-costs__details">
-                                            <div class="item-costs__shipping-cost">
-                                                <p class="shipping-cost__p">shipping</p>
-                                                <p class="shipping-cost__price">$8.00</p>
-                                            </div>
-                                            <div class="item-price-was__total-cost">
-                                                <p class="total-cost__p">Total</p>
-                                                <p class="total-cost__price">$24.59</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-fotter">
-                                    
-                                    <div class="add-to-cart">
-                                        <div class="input-qty-wrapper">
-                                            <input type="number" name="qty-lbs" id="qtyLbs" value="1">
-                                            <div class="qty-or-lbs-wrapper">
-                                                <div>Qty</div>
-                                            </div>
-                                        </div>
-                                        <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="item-wrapper">
-                                <div class="item-row1">
-                                    <div class="item-img">
-                                        <img src="dietPepsi.jpg" alt="">
-                                    </div>
-                                </div>
-                                <!-- item row 2, description and detail iin here. -->
-                                
-                                <div class="item-row2"> 
-                                    <div class="item-desc">
-                                        <p class="desc-tag">Diet pepsi</p>
-                                        <p>24 x 355 mL Cans</p>
-                                    </div>
-                        
-                                </div>
-                                <!-- item price and saving here -->
-                                <div class="item-row3">
-                                    <div class="item-price-wrapper">
-                                        <div class="item-price-icon">
-                                            <i class="fas fa-dollar-sign"></i>
-                                        </div>
-                                        
-                                        <div class="dollar">
-                                            10
-                                        </div>
-                                        <div class="cent">
-                                            69
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="item-costs__wrapper">
-                        
-                                        <div class="item-costs__details">
-                                            <div class="item-costs__shipping-cost">
-                                                <p class="shipping-cost__p">shipping</p>
-                                                <p class="shipping-cost__price">$8.00</p>
-                                            </div>
-                                            <div class="item-price-was__total-cost">
-                                                <p class="total-cost__p">Total</p>
-                                                <p class="total-cost__price">$14.69</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-fotter">
-                                    
-                                    <div class="add-to-cart">
-                                        <div class="input-qty-wrapper">
-                                            <input type="number" name="qty-lbs" id="qtyLbs" value="1">
-                                            <div class="qty-or-lbs-wrapper">
-                                                <div>Qty</div>
-                                            </div>
-                                        </div>
-                                        <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="item-wrapper">
-                                <div class="item-row1">
-                                    <div class="item-img">
-                                        <img src="orangeCrush.jpg" alt="">
-                                    </div>
-                                </div>
-                                <!-- item row 2, description and detail iin here. -->
-                                
-                                <div class="item-row2"> 
-                                    <div class="item-desc">
-                                        <p class="desc-tag">Crush Soda Orange</p>
-                                        <p>12 x 355 mL Cans</p>
-                                    </div>
-                        
-                                </div>
-                                <!-- item price and saving here -->
-                                <div class="item-row3">
-                                    <div class="item-price-wrapper">
-                                        <div class="item-price-icon">
-                                            <i class="fas fa-dollar-sign"></i>
-                                        </div>
-                                        
-                                        <div class="dollar">
-                                            4
-                                        </div>
-                                        <div class="cent">
-                                            99
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="item-costs__wrapper">
-                        
-                                        <div class="item-costs__details">
-                                            <div class="item-costs__shipping-cost">
-                                                <p class="shipping-cost__p">shipping</p>
-                                                <p class="shipping-cost__price">$4.00</p>
-                                            </div>
-                                            <div class="item-price-was__total-cost">
-                                                <p class="total-cost__p">Total</p>
-                                                <p class="total-cost__price">$8.99</p>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-fotter">
-                                    
-                                    <div class="add-to-cart">
-                                        <div class="input-qty-wrapper">
-                                            <input type="number" name="qty-lbs" id="qtyLbs" value="1">
-                                            <div class="qty-or-lbs-wrapper">
-                                                <div>Qty</div>
-                                            </div>
-                                        </div>
-                                        <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
-                                    </div>
-                                </div> 
-                            </div>                                                                            
-                        </div>
-                    </div>
-
-                    <!-- Row 2 of items -->
-
+                <div class="how-it-works__wrapper"><!--how-it-works__wrapper begin -->
                     
+                    <div class="wrapper__card first"><!--wrapper__card first begin -->
+
+                        <div class="titled-card"><!--titled-card begin -->
+                            <h4>Select Airport</h4>
+                        </div><!--titled-card Finish -->
+                    
+                        <div class="img-wrapper"><!--img-wrapper begin -->
+                            <img src="airport.png" alt="">
+                        </div><!--img-wrapper Finsh -->
+
+                        <div class="card-content "><!--card-content begin -->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
+                            
+                                <a class="card-link" href="airport.php">
+                                    <div class="wrapper__card-link">view All</div>
+                                </a>
+                            
+                        </div><!--card-content Finish -->
+
+                    </div><!--wrapper__card first Finish -->
+
+                    <div class="wrapper__card"><!--wrapper__card begin -->
+
+                        <div class="titled-card"><!--titled-card begin -->
+                            <h4>Shop</h4>
+                        </div><!--titled-card Finish -->
+
+                        <div class="img-wrapper"><!--img-wrapper begin -->
+                            <img src="ridecart.jpg" alt="">
+                        </div><!--img-wrapper Finish -->
+
+                        <div class="card-content"><!--card-content begin -->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
+                            
+                            <a class="card-link" href="shop.php">
+                                <div class="wrapper__card-link">start browsing</div>
+                            </a>
+                            
+                        </div><!--card-content Finish -->
+
+                    </div><!--wrapper__card Finish -->
+
+                    <div class="wrapper__card"><!--wrapper__card begin -->
+
+                        <div class="titled-card"><!--titled-card begin -->
+                            <h4>Alert System </h4>
+                        </div><!--titled-card Finish -->
+
+                        <div class="img-wrapper"><!--img-wrapper begin -->
+                            <img src="notification.png" alt="">
+                        </div><!--img-wrapper Finish -->
+                        <div class="card-content"><!--card-content begin -->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
+                            <a class="card-link" href="alert.php">
+                                <div class="wrapper__card-link">Read More</div>
+                            </a>
+                        </div><!--card-content Finish -->
+                    </div><!--wrapper__card Finish -->
+
+
+                    <div class="wrapper__card"><!--wrapper__card begin -->
+                        <div class="titled-card"><!--titled-card begin -->
+                            <h4>Delivery Method </h4>
+                        </div><!--titled-card Finish -->
+                        <div class="img-wrapper"><!--img-wrapper begin -->
+                            <img src="cargo.png" alt="">
+                        </div> <!--img-wrapper Finish -->
+                        <div class="card-content"><!--card-content begin -->
+                            
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, repellendus! Nisi placeat incidunt voluptatibus illum?</p>
+                            
+                            <a class="card-link" href="#"><div class="wrapper__card-link">Read More</div></a>
+                            
+                        </div><!--card-content finish -->
+
+                    </div><!--wrapper__card Finish -->
+                    
+                </div><!--how-it-works__wrapper Finish -->
+                
+            </div><!-- top-section Finish -->
+
+        </div><!-- col-md-12 Finish -->
+        <div id="hot"><!-- #hot Begin -->
+       
+            <div class="box"><!-- box Begin -->
+           
+                <div class="container"><!-- container Begin -->
+                    
+                    <div class="col-md-12"><!-- col-md-12 Begin -->
                         
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+                        <h2>
+                            Our Latest Products
+                        </h2>
+                        
+                    </div><!-- col-md-12 Finish -->
+                    
+                </div><!-- container Finish -->
+                
+            </div><!-- box Finish -->
+       
+        </div><!-- #hot Finish -->
+
+        
+        <div class="row1-wrapper"><!-- row1-wrapper Start -->  
+
+            <div class="items-row1"><!-- items-row1 Start --> 
+                <!-- item start master template V1.5 for php server render-->
+                <!-- -------------------------------------------------------------------------- -->
+                <div class="item-wrapper">
+                    
+                    <div class="item-row1">
+                        
+
+                            <a class="item-img" href="details.php">
+                       
+                                <img src="water.jpg" alt="Bottle of Water">
+                       
+                            </a>
+                            
+                        
+                    </div>
+                    <!-- item row 2, description and detail iin here. -->
+                    
+                    <div class="item-row2"> 
+                        <div class="item-desc">
+                            <p class="desc-tag">Natural Spring Water</p>
+                            <p>40 x 500 mL bottles</p>
+                        </div>
+            
+                    </div>
+                    <!-- item price and saving here -->
+                    <div class="item-row3">
+                        <div class="item-price-wrapper">
+                            <div class="item-price-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            
+                            <div class="dollar">
+                                6
+                            </div>
+                            <div class="cent">
+                                49
+                            </div>
+                            
+                        </div>
+                        <div class="item-costs__wrapper">
+            
+                            <div class="item-costs__details">
+                                <div class="item-costs__shipping-cost">
+                                    <p class="shipping-cost__p">shipping</p>
+                                    <p class="shipping-cost__price">$15.00</p>
+                                </div>
+                                <div class="item-price-was__total-cost">
+                                    <p class="total-cost__p">Total</p>
+                                    <p class="total-cost__price">$21.49</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-fotter">
+                        
+                        <div class="add-to-cart">
+                            <div class="input-qty-wrapper">
+                                <input type="number" name="qty-lbs" id="qtyLbs" value="1">
+                                <div class="qty-or-lbs-wrapper">
+                                    <div>Qty</div>
+                                </div>
+                            </div>
+                            <a href="details.php" class="btn btn-primary">
+                                <i class="fas fa-cart-plus ">
+                                    
+                                </i>
+                               
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- end of master item -->
+                <div class="item-wrapper">
+                    <div class="item-row1">
+                        <div class="item-img">
+                            <img src="pepsi.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- item row 2, description and detail iin here. -->
+                    
+                    <div class="item-row2"> 
+                        <div class="item-desc">
+                            <p class="desc-tag">Pepsi </p>
+                            <p>24 x 355 mL Cans</p>
+                        </div>
+            
+                    </div>
+                    <!-- item price and saving here -->
+                    <div class="item-row3">
+                        <div class="item-price-wrapper">
+                            <div class="item-price-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            
+                            <div class="dollar">
+                                10
+                            </div>
+                            <div class="cent">
+                                69
+                            </div>
+                            
+                        </div>
+                        <div class="item-costs__wrapper">
+            
+                            <div class="item-costs__details">
+                                <div class="item-costs__shipping-cost">
+                                    <p class="shipping-cost__p">shipping</p>
+                                    <p class="shipping-cost__price">$4.00</p>
+                                </div>
+                                <div class="item-price-was__total-cost">
+                                    <p class="total-cost__p">Total</p>
+                                    <p class="total-cost__price">$14.69</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-fotter">
+                        
+                        <div class="add-to-cart">
+                            <div class="input-qty-wrapper">
+                                <input type="number" name="qty-lbs" id="qtyLbs" value="1">
+                                <div class="qty-or-lbs-wrapper">
+                                    <div>Qty</div>
+                                </div>
+                            </div>
+                            <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-wrapper">
+                    <div class="item-row1">
+                        <div class="item-img">
+                            <img src="rainbow.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- item row 2, description and detail iin here. -->
+                    
+                    <div class="item-row2"> 
+                        <div class="item-desc">
+                            <p class="desc-tag">Crush Rainbow Pack</p>
+                            <p>24 x 355 mL Cans</p>
+                        </div>
+            
+                    </div>
+                    <!-- item price and saving here -->
+                    <div class="item-row3">
+                        <div class="item-price-wrapper">
+                            <div class="item-price-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            
+                            <div class="dollar">
+                                16
+                            </div>
+                            <div class="cent">
+                                59
+                            </div>
+                            
+                        </div>
+                        <div class="item-costs__wrapper">
+            
+                            <div class="item-costs__details">
+                                <div class="item-costs__shipping-cost">
+                                    <p class="shipping-cost__p">shipping</p>
+                                    <p class="shipping-cost__price">$8.00</p>
+                                </div>
+                                <div class="item-price-was__total-cost">
+                                    <p class="total-cost__p">Total</p>
+                                    <p class="total-cost__price">$24.59</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-fotter">
+                        
+                        <div class="add-to-cart">
+                            <div class="input-qty-wrapper">
+                                <input type="number" name="qty-lbs" id="qtyLbs" value="1">
+                                <div class="qty-or-lbs-wrapper">
+                                    <div>Qty</div>
+                                </div>
+                            </div>
+                            <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="item-wrapper">
+                    <div class="item-row1">
+                        <div class="item-img">
+                        <img src="dietPepsi.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <!-- item row 2, description and detail iin here. -->
+                    
+                    <div class="item-row2"> 
+                        <div class="item-desc">
+                            <p class="desc-tag">Diet pepsi</p>
+                            <p>24 x 355 mL Cans</p>
+                        </div>
+            
+                    </div>
+                    <!-- item price and saving here -->
+                    <div class="item-row3">
+                        <div class="item-price-wrapper">
+                            <div class="item-price-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            
+                            <div class="dollar">
+                                10
+                            </div>
+                            <div class="cent">
+                                69
+                            </div>
+                            
+                        </div>
+                        <div class="item-costs__wrapper">
+            
+                            <div class="item-costs__details">
+                                <div class="item-costs__shipping-cost">
+                                    <p class="shipping-cost__p">shipping</p>
+                                    <p class="shipping-cost__price">$8.00</p>
+                                </div>
+                                <div class="item-price-was__total-cost">
+                                    <p class="total-cost__p">Total</p>
+                                    <p class="total-cost__price">$14.69</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-fotter">
+                        
+                        <div class="add-to-cart">
+                            <div class="input-qty-wrapper">
+                                <input type="number" name="qty-lbs" id="qtyLbs" value="1">
+                                <div class="qty-or-lbs-wrapper">
+                                    <div>Qty</div>
+                                </div>
+                            </div>
+                            <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="item-wrapper">
+                    <div class="item-row1">
+                        <div class="item-img">
+                            <img src="orangeCrush.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- item row 2, description and detail iin here. -->
+                    
+                    <div class="item-row2"> 
+                        <div class="item-desc">
+                            <p class="desc-tag">Crush Soda Orange</p>
+                            <p>12 x 355 mL Cans</p>
+                        </div>
+            
+                    </div>
+                    <!-- item price and saving here -->
+                    <div class="item-row3">
+                        <div class="item-price-wrapper">
+                            <div class="item-price-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            
+                            <div class="dollar">
+                                4
+                            </div>
+                            <div class="cent">
+                                99
+                            </div>
+                            
+                        </div>
+                        <div class="item-costs__wrapper">
+            
+                            <div class="item-costs__details">
+                                <div class="item-costs__shipping-cost">
+                                    <p class="shipping-cost__p">shipping</p>
+                                    <p class="shipping-cost__price">$4.00</p>
+                                </div>
+                                <div class="item-price-was__total-cost">
+                                    <p class="total-cost__p">Total</p>
+                                    <p class="total-cost__price">$8.99</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-fotter">
+                        
+                        <div class="add-to-cart">
+                            <div class="input-qty-wrapper">
+                                <input type="number" name="qty-lbs" id="qtyLbs" value="1">
+                                <div class="qty-or-lbs-wrapper">
+                                    <div>Qty</div>
+                                </div>
+                            </div>
+                            <button class="add-to-cart-btn" type="submit"><i class="fas fa-cart-plus "></i></button>
+                        </div>
+                    </div> 
+                </div>                                                                            
+            </div><!-- items-row1 finish --> 
+
+        </div><!-- row1-wrapper finish -->  
+
+    </div><!-- website content container Finish -->
+
+    <div class="" id="footer"><!-- #footer Begin-->
+        <div class="container"><!-- containe Begin-->
+            <div class="row"><!--row Begin-->
+                <div class="col-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin-->
+    
+                    <h4>Pages</h4>
+    
+                    <ul><!-- ul Begin-->
+                        <li><a href="cart.php">Shopping Cart</a></li>
+                        <li><a href="contact.php">Shop</a></li>
+                        <li><a href="shop.php">Contact Us</a></li>
+                        <li><a href="checkout.php">My Account</a></li>
+                        <li><a href="conditions.php">Terms And Conditions</a></li>
+                    </ul><!-- ul Finish-->
+    
+                    <hr>
+    
+                    <h4>User Section</h4>
+    
+                    <ul><!-- ul Begin-->
+                        <li><a href="checkout.php">Login</a></li>
+                        <li><a href="customer_register.php">Register</a></li>
+                    </ul><!-- ul Finish-->
+    
+    
+                    <hr class="hidden-md hidden-lg hidden-sm">
+    
+                
+                </div><!--col-sm-6 col-md-3 Finish-->
+    
+                <div class="com-sm-6 col-md-3"><!--com-sm-6 col-md-3 Begin-->
+    
+                <h6>Top Products Categories</h6>
+    
+                    <ul><!--ul Begin-->
+                        <li><a  href="#"><p>Breverage - Pop</p></a></li>
+                        <li><a  href="#"><p>Chips</p></a></li>
+                        <li><a  href="#"><p>Staples</p></a></li>
+                        <li><a  href="#"><p>Cereal / Pancake Mix</p></a></li>
+                        <li><a  href="#"><p>Syrup / Jam / Sauce</p></a></li>
+                        <li><a  href="#"><p>Packing / plates</p></a></li>
+                        <li><a  href="#"><p>Coffee / Tea</p></a></li>
+                        <li><a  href="#"><p>Cleaning / Laundrt Suplies</p></a></li>
+                    </ul><!--ul Finish-->
+    
+                    <hr class="hidden-md hidden-lg">
+    
+                </div><!--com-sm-6 col-md-3 Finish-->
+    
+                <div class="col-sm-6 col-md-3"><!--com-sm-6 col-md-3 Begin-->
+    
+                    <h4>Find Us:</h4>
+    
+                    <p><!-- p Start-->
+    
+                            <strong>WakaConnection inc</strong>
+                            <br/>Canada
+                            <br/>Ontario
+                            <br/>807-222-2222
+                            <br/>WakaConnection@gmail.com
+                            <br/><strong>Alexandre Carriere</strong>
+    
+                    </p><!-- p Finish-->
+    
+                    <a href="contact.php">Check our Contact Page</a>
+    
+                    <hr class="hidden-md hidden-lg">
+    
+    
+                </div><!--com-sm-6 col-md-3 Finish-->
+    
+                <div class="col-sm-6 col-md-3"><!--com-sm-6 col-md-3 Start-->
+    
+                    <h4>Get The News</h4>
+    
+                    <p class="text-mutted"> 
+                        Dont miss our latest update.
+                    </p>
+    
+                    <form action="" method="post"><!--form Start-->
+                        <div class="input-group"><!--input-group Start-->
+    
+                            <input type="text" class="form-control" name="email">
+    
+                            <span class="input-group-btn"><!--input-group-btn Finish-->
+    
+                                <input type="submit" value="Subscribe" class="btn btn-default">
+    
+                            </span><!--input-group-btn Finish-->
+    
+                        </div><!--input-group Finish-->
+    
+                    </form><!--form Finish-->
+    
+                    <hr>
+                    <h4>Keep In Touch</h4>
+    
+                    <p class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-google-plus"></a>
+                        <a href="#" class="fa fa-envelope"></a>
+                    </p>
+    
+                </div><!--com-sm-6 col-md-3 Finish-->
+    
+            </div><!-- row Finish-->
+        </div><!-- container Finish-->
+    </div><!-- #footer Finish-->
+    
+    <div id="copyright"><!-- #copyright Begin -->
+        <div class="container"><!-- container Begin -->
+            <div class="col-md-6"><!-- col-md-6 Begin -->
+                
+                <p class="pull-left">&copy; 2020 WakaConnection All Rights Reserve</p>
+                
+            </div><!-- col-md-6 Finish -->
+    
+            
+    
+            <div class="col-md-6"><!-- col-md-6 Begin -->
+                
+                <p class="pull-right">Theme by: <a href="#">Alexandre Carriere</a></p>
+                
+            </div><!-- col-md-6 Finish -->
+        </div><!-- container Finish -->
+    </div><!-- #copyright Finish -->
+    
+
+        
+
+      
+
+        
+
+    
+
+
+    <script src="js/jquery-331.min.js"></script>
+    <script src="js/bootstrap-337.min.js"></script>
+
+    
 </body>
 </html>
